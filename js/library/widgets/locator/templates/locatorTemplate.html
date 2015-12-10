@@ -1,0 +1,22 @@
+﻿<div data-dojo-attach-point="divAddressContainer" align="center" class="esriCTAddressContainer esriCTHideContainerHeight">
+    <div data-dojo-attach-point="divAddressContent" class="esriCTAddressContent">
+        <div class="esriCTLocator">
+            <div data-dojo-attach-point="divAddressPlaceHolder" class="esriCTAddressPlaceHolder">
+                <input type="text" data-dojo-attach-point="txtAddress" class="esriCTTxtAddress" onfocus="if(this.setSelectionRange)this.setSelectionRange(this.value.length, this.value.length);" />
+            </div>
+            <div class="esriCTSearchClose" data-dojo-attach-point="clearhide">
+                <span class="esriCTClearInput" title="${sharedNls.tooltips.clearEntryTooltip}" data-dojo-attach-point="close">
+                </span><span>
+                    <img data-dojo-attach-point="imgSearchLoader" class="esriCTSearchLoader" alt="imgSearchLoader" /></span>
+            </div>
+            <div class="esriCTSearch" data-dojo-attach-point="divSearch">
+                <span class="esriCTSearchIcon" title="${sharedNls.tooltips.search}" data-dojo-attach-point="esriCTimgLocate">
+                </span>
+            </div>
+        </div>
+        <div data-dojo-attach-point="divAddressList" class="esriCTAddressList">
+            <div data-dojo-attach-point="divAddressResults" class="esriCTFullWidth">
+            </div>
+        </div>
+    </div>
+</div>
